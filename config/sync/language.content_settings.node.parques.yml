@@ -1,0 +1,11 @@
+uuid: 413c5f9a-e35d-4b60-ab8d-0e7ecbd005e2
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.parques
+id: node.parques
+target_entity_type_id: node
+target_bundle: parques
+default_langcode: site_default
+language_alterable: false

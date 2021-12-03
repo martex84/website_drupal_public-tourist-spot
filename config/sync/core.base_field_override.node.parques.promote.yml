@@ -1,0 +1,22 @@
+uuid: b0d355d5-ad92-4d94-a447-a6dd1e141c07
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.parques
+id: node.parques.promote
+field_name: promote
+entity_type: node
+bundle: parques
+label: 'Promovido para a página inicial'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desligado
+field_type: boolean

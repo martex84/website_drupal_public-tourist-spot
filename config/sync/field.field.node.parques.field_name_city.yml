@@ -1,0 +1,21 @@
+uuid: 1fbd2483-45c9-4213-9f76-3ab9adfae2d0
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name_city
+    - node.type.parques
+  module:
+    - text
+id: node.parques.field_name_city
+field_name: field_name_city
+entity_type: node
+bundle: parques
+label: 'Nome da Cidade'
+description: 'Informe o nome da cidade.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

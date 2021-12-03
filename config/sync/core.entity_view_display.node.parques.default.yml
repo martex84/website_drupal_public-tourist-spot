@@ -1,0 +1,324 @@
+uuid: 6a32e861-ca4f-4c15-993e-2a6c6ec38a84
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.parques.body
+    - field.field.node.parques.field_animals_permission
+    - field.field.node.parques.field_distance_area
+    - field.field.node.parques.field_image_main_park
+    - field.field.node.parques.field_image_secondary_park_left
+    - field.field.node.parques.field_image_secondary_park_right
+    - field.field.node.parques.field_local_google_map
+    - field.field.node.parques.field_name_city
+    - field.field.node.parques.field_name_nation
+    - field.field.node.parques.field_permission_feed
+    - node.type.parques
+  module:
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: top-2-col
+          column_widths: 50-50
+          context_mapping: {  }
+        components:
+          6156c2bc-756f-448e-8512-4b8891b2c2e8:
+            uuid: 6156c2bc-756f-448e-8512-4b8891b2c2e8
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:parques:field_name_city'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 4
+          ab68e797-5591-4e38-bea4-34b801bf5357:
+            uuid: ab68e797-5591-4e38-bea4-34b801bf5357
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:parques:field_name_nation'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 6
+          bb6093c9-2fb8-4d10-ab83-3ec0d2ebf0d2:
+            uuid: bb6093c9-2fb8-4d10-ab83-3ec0d2ebf0d2
+            region: second
+            configuration:
+              id: 'field_block:node:parques:field_animals_permission'
+              label: 'Permission Animals '
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: boolean
+                settings:
+                  format: default
+                  format_custom_true: ''
+                  format_custom_false: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 7
+          7a8f0a23-fd10-436f-a433-0de7f183bfa1:
+            uuid: 7a8f0a23-fd10-436f-a433-0de7f183bfa1
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:parques:field_distance_area'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 8
+          2743732a-3442-4174-9499-23a6f1faa34d:
+            uuid: 2743732a-3442-4174-9499-23a6f1faa34d
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:parques:field_permission_feed'
+              formatter:
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+                type: boolean
+            additional: {  }
+            weight: 9
+          c687fbce-e639-4df7-a5e7-be37d4c0cf42:
+            uuid: c687fbce-e639-4df7-a5e7-be37d4c0cf42
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:parques:field_local_google_map'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 10
+          1799efad-3264-4fd0-bb95-50f413590c99:
+            uuid: 1799efad-3264-4fd0-bb95-50f413590c99
+            region: first
+            configuration:
+              id: 'field_block:node:parques:field_image_main_park'
+              label: 'Image Main Park'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 11
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          434461f1-bf5a-4b12-8b76-d59e8648311d:
+            uuid: 434461f1-bf5a-4b12-8b76-d59e8648311d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:parques:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: bottom-2-col
+          column_widths: 50-50
+          context_mapping: {  }
+        components:
+          e00ac3fe-93ac-4d73-827b-2af61815f508:
+            uuid: e00ac3fe-93ac-4d73-827b-2af61815f508
+            region: first
+            configuration:
+              id: 'field_block:node:parques:field_image_secondary_park_left'
+              label: 'Image Secondary Park Left'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          f6d5dc72-074d-4d31-946a-74e0d9ae9176:
+            uuid: f6d5dc72-074d-4d31-946a-74e0d9ae9176
+            region: second
+            configuration:
+              id: 'field_block:node:parques:field_image_secondary_park_right'
+              label: 'Image Secondary Park Right'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: node.parques.default
+targetEntityType: node
+bundle: parques
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_animals_permission:
+    weight: 104
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_distance_area:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image_main_park:
+    type: entity_reference_entity_view
+    weight: 108
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_image_secondary_park_left:
+    type: entity_reference_entity_view
+    weight: 109
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_image_secondary_park_right:
+    type: entity_reference_entity_view
+    weight: 110
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: first
+  field_local_google_map:
+    weight: 107
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_name_city:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_name_nation:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_permission_feed:
+    weight: 106
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
