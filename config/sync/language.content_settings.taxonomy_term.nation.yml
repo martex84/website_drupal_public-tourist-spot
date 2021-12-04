@@ -1,0 +1,11 @@
+uuid: 8597e4e8-1fcf-41d0-aaea-2eeda00f52d3
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nation
+id: taxonomy_term.nation
+target_entity_type_id: taxonomy_term
+target_bundle: nation
+default_langcode: site_default
+language_alterable: false

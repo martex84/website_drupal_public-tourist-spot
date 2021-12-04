@@ -1,0 +1,29 @@
+uuid: 6f16d63b-2c3b-42c9-9ee6-e4c89905d5de
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_image_nation
+    - media.type.image
+    - taxonomy.vocabulary.nation
+id: taxonomy_term.nation.field_image_nation
+field_name: field_image_nation
+entity_type: taxonomy_term
+bundle: nation
+label: 'Image nation'
+description: 'Bandeira do país.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

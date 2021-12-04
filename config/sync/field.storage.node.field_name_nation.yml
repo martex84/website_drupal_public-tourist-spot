@@ -1,17 +1,17 @@
-uuid: 9d29f883-9780-4e0c-a41e-8be48a2a13a4
+uuid: 39721257-1f36-4dd6-b159-663ef874f7c6
 langcode: pt-br
 status: true
 dependencies:
   module:
     - node
-    - text
+    - taxonomy
 id: node.field_name_nation
 field_name: field_name_nation
 entity_type: node
-type: text
+type: entity_reference
 settings:
-  max_length: 255
-module: text
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true

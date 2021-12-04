@@ -1,21 +1,29 @@
-uuid: 88d5b31f-3247-41ac-bfea-a1ce179984a0
+uuid: b8b18727-880e-48b9-9115-ff1d34d27eed
 langcode: pt-br
 status: true
 dependencies:
   config:
     - field.storage.node.field_name_nation
     - node.type.parques
-  module:
-    - text
+    - taxonomy.vocabulary.nation
 id: node.parques.field_name_nation
 field_name: field_name_nation
 entity_type: node
 bundle: parques
 label: 'Nome do país'
 description: 'Informe o nome do país.'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: text
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      nation: nation
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
