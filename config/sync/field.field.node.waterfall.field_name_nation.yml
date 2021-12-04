@@ -1,0 +1,29 @@
+uuid: 52770eb4-3587-4dd8-95e3-5fb1da400daf
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name_nation
+    - node.type.waterfall
+    - taxonomy.vocabulary.nation
+id: node.waterfall.field_name_nation
+field_name: field_name_nation
+entity_type: node
+bundle: waterfall
+label: 'Nome do país'
+description: 'Informe o nome do país que está localizado a cachoeira'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      nation: nation
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

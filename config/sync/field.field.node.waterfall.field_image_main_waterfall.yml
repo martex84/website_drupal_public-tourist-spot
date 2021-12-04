@@ -1,0 +1,29 @@
+uuid: d8bb7fa9-23ae-4d81-a524-53cd1d08cb0d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_main_waterfall
+    - media.type.image
+    - node.type.waterfall
+id: node.waterfall.field_image_main_waterfall
+field_name: field_image_main_waterfall
+entity_type: node
+bundle: waterfall
+label: 'Imagem Principal da Cachoeira'
+description: 'Inclua a imagem principal da cachoeira'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

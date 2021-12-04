@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.list_park
   module:
+    - system
     - views
   theme:
     - bootstrap
@@ -21,4 +22,8 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /node
+    negate: false

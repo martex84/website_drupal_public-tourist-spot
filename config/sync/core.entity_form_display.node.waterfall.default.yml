@@ -1,0 +1,156 @@
+uuid: 8afcc147-fed2-4929-86fa-382d0fcce3c0
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.waterfall.body
+    - field.field.node.waterfall.field_detailed_image_waterfall
+    - field.field.node.waterfall.field_image_main_waterfall
+    - field.field.node.waterfall.field_local_feeding
+    - field.field.node.waterfall.field_name_city
+    - field.field.node.waterfall.field_name_nation
+    - field.field.node.waterfall.field_private_propriety
+    - field.field.node.waterfall.field_river_name
+    - field.field.node.waterfall.field_waterfall_video
+    - node.type.waterfall
+  module:
+    - media_library
+    - path
+    - text
+id: node.waterfall.default
+targetEntityType: node
+bundle: waterfall
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_detailed_image_waterfall:
+    type: media_library_widget
+    weight: 129
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_image_main_waterfall:
+    type: media_library_widget
+    weight: 125
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_local_feeding:
+    weight: 127
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_name_city:
+    weight: 123
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_name_nation:
+    weight: 124
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_private_propriety:
+    weight: 128
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_river_name:
+    weight: 126
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_waterfall_video:
+    type: media_library_widget
+    weight: 130
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

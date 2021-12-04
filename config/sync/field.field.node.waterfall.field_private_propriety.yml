@@ -1,0 +1,23 @@
+uuid: 69d6ed43-90cf-44a4-9694-7b5236e751bf
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_private_propriety
+    - node.type.waterfall
+id: node.waterfall.field_private_propriety
+field_name: field_private_propriety
+entity_type: node
+bundle: waterfall
+label: 'É uma propriedade privada?'
+description: 'Informe se é uma propriedade privada.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Sim
+  off_label: Não
+field_type: boolean

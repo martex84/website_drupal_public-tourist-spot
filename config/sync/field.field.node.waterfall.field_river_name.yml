@@ -1,0 +1,21 @@
+uuid: 3990c999-a008-4d38-a8d3-401b67219440
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_river_name
+    - node.type.waterfall
+  module:
+    - text
+id: node.waterfall.field_river_name
+field_name: field_river_name
+entity_type: node
+bundle: waterfall
+label: 'Nome do Rio'
+description: 'Informe o nome do rio que a cachoeira pertence.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
