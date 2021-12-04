@@ -1,0 +1,23 @@
+uuid: 103be67b-cd1e-4438-93e6-a9776940f8c0
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_permission_feed
+    - node.type.parques
+id: node.parques.field_permission_feed
+field_name: field_permission_feed
+entity_type: node
+bundle: parques
+label: 'É permitido comer no local?'
+description: 'Informe se é permitido a alimentação no local.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Sim.
+  off_label: Não.
+field_type: boolean

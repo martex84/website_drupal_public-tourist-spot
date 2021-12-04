@@ -1,0 +1,20 @@
+uuid: b778b996-6336-411c-b9ac-6da232387c53
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - media
+    - taxonomy
+id: taxonomy_term.field_image_nation
+field_name: field_image_nation
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+uuid: d7e88ec9-32cd-4426-97de-46702899409e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_secondary_park_left
+    - media.type.image
+    - node.type.parques
+id: node.parques.field_image_secondary_park_left
+field_name: field_image_secondary_park_left
+entity_type: node
+bundle: parques
+label: 'Image Secondary Park Left'
+description: 'Seleciona a imagem extra para o park.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

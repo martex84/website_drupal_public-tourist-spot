@@ -1,0 +1,29 @@
+uuid: 14dbeba3-0395-4c4d-adbb-2d3ff2e6b90d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name_city
+    - node.type.parques
+    - taxonomy.vocabulary.city
+id: node.parques.field_name_city
+field_name: field_name_city
+entity_type: node
+bundle: parques
+label: 'Nome da Cidade'
+description: 'Informe o nome da cidade.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      city: city
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

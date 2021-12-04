@@ -1,0 +1,21 @@
+uuid: ca3c35bd-c54b-4267-83c5-990d18ac4258
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_distance_area
+    - node.type.parques
+  module:
+    - text
+id: node.parques.field_distance_area
+field_name: field_distance_area
+entity_type: node
+bundle: parques
+label: 'Tamanho do Parque'
+description: 'Informe a distancia da área.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

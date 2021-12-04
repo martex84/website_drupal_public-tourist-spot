@@ -1,0 +1,20 @@
+uuid: d3e1c7c1-0b0a-4b0c-9685-bb1b678b7746
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_image_secondary_park_left
+field_name: field_image_secondary_park_left
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
