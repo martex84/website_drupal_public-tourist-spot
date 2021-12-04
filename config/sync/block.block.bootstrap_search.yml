@@ -1,6 +1,6 @@
 uuid: f51eea24-2388-46c2-b1ba-dfacc2e36d59
 langcode: pt-br
-status: true
+status: false
 dependencies:
   module:
     - search
