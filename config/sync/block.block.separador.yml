@@ -1,0 +1,30 @@
+uuid: 7370b38b-eef8-45d1-8424-98d2b0f9d204
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6c1efc85-227b-4511-a7c8-cc25b138a23a'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap
+id: separador
+theme: bootstrap
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'block_content:6c1efc85-227b-4511-a7c8-cc25b138a23a'
+settings:
+  id: 'block_content:6c1efc85-227b-4511-a7c8-cc25b138a23a'
+  label: Separador
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node
+    negate: false

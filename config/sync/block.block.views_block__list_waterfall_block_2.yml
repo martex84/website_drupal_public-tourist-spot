@@ -1,0 +1,39 @@
+uuid: 23eb5854-d65e-49f3-a4a2-4ae39501d9d4
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.list_waterfall
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__list_waterfall_block_2
+theme: bootstrap
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:list_waterfall-block_2'
+settings:
+  id: 'views_block:list_waterfall-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping:
+    tid: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      waterfall: waterfall
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: /list_waterfall
+    negate: false
