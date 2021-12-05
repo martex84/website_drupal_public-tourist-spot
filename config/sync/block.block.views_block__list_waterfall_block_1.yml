@@ -1,22 +1,22 @@
-uuid: 8424b6cb-783a-4146-884e-4f99e20cbf6a
+uuid: ec1cd02a-fd9c-44ef-ad19-9e455745d726
 langcode: pt-br
 status: true
 dependencies:
   config:
-    - views.view.list_park
+    - views.view.list_waterfall
   module:
     - system
     - views
   theme:
     - bootstrap
-id: views_block__list_park_block_1
+id: views_block__list_waterfall_block_1
 theme: bootstrap
 region: sidebar_second
-weight: -9
+weight: -7
 provider: null
-plugin: 'views_block:list_park-block_1'
+plugin: 'views_block:list_waterfall-block_1'
 settings:
-  id: 'views_block:list_park-block_1'
+  id: 'views_block:list_waterfall-block_1'
   label: ''
   provider: views
   label_display: visible

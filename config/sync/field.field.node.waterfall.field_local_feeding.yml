@@ -1,0 +1,23 @@
+uuid: 5d545fcc-e377-4aca-8b8b-227d5d670560
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_local_feeding
+    - node.type.waterfall
+id: node.waterfall.field_local_feeding
+field_name: field_local_feeding
+entity_type: node
+bundle: waterfall
+label: 'Contem local perto para alimentação?'
+description: 'Informe se contem ou não local perto para se alimentar.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Sim
+  off_label: Não
+field_type: boolean

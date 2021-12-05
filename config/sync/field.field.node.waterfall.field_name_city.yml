@@ -1,0 +1,29 @@
+uuid: 78ab6916-77ea-4293-8b43-7814b72dada7
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name_city
+    - node.type.waterfall
+    - taxonomy.vocabulary.city
+id: node.waterfall.field_name_city
+field_name: field_name_city
+entity_type: node
+bundle: waterfall
+label: 'Nome da Cidade'
+description: 'Informa o nome da cidade que está localizado a cachoeira'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      city: city
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

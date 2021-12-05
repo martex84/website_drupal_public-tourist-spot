@@ -1,0 +1,47 @@
+uuid: 0126fe67-f3c1-467f-b6ec-72f8fe1ebbad
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.waterfall.body
+    - field.field.node.waterfall.field_detailed_image_waterfall
+    - field.field.node.waterfall.field_image_main_waterfall
+    - field.field.node.waterfall.field_local_feeding
+    - field.field.node.waterfall.field_name_city
+    - field.field.node.waterfall.field_name_nation
+    - field.field.node.waterfall.field_private_propriety
+    - field.field.node.waterfall.field_river_name
+    - field.field.node.waterfall.field_waterfall_video
+    - node.type.waterfall
+  module:
+    - text
+    - user
+id: node.waterfall.teaser
+targetEntityType: node
+bundle: waterfall
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_detailed_image_waterfall: true
+  field_image_main_waterfall: true
+  field_local_feeding: true
+  field_name_city: true
+  field_name_nation: true
+  field_private_propriety: true
+  field_river_name: true
+  field_waterfall_video: true
+  langcode: true

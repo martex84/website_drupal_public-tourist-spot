@@ -1,0 +1,20 @@
+uuid: af94c3c4-b9cb-4e9d-9b50-32dfc4d2df7c
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_image_main_waterfall
+field_name: field_image_main_waterfall
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
