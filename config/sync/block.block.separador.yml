@@ -12,7 +12,7 @@ dependencies:
 id: separador
 theme: bootstrap
 region: sidebar_second
-weight: -7
+weight: -8
 provider: null
 plugin: 'block_content:6c1efc85-227b-4511-a7c8-cc25b138a23a'
 settings:

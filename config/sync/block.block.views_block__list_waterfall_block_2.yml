@@ -12,8 +12,8 @@ dependencies:
     - bootstrap
 id: views_block__list_waterfall_block_2
 theme: bootstrap
-region: sidebar_first
-weight: 0
+region: sidebar_second
+weight: -6
 provider: null
 plugin: 'views_block:list_waterfall-block_2'
 settings:
@@ -26,6 +26,10 @@ settings:
   context_mapping:
     tid: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
 visibility:
+  request_path:
+    id: request_path
+    pages: '/waterfall/*'
+    negate: false
   node_type:
     id: node_type
     bundles:
@@ -33,7 +37,3 @@ visibility:
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
-  request_path:
-    id: request_path
-    pages: /list_waterfall
-    negate: false
