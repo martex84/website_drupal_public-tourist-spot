@@ -1,0 +1,11 @@
+uuid: a05eea46-eb35-4a8f-b5ae-15f897ed4ba3
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.base_content_with_text_and_image
+id: node.base_content_with_text_and_image
+target_entity_type_id: node
+target_bundle: base_content_with_text_and_image
+default_langcode: site_default
+language_alterable: false

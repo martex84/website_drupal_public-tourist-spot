@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: Waterfall
+name: Cachoeira
 type: waterfall
 description: 'Adicione uma novo conjunto de informações para uma cachoeira.'
 help: ''

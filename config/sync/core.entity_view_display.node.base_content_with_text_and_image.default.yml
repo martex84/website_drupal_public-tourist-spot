@@ -1,0 +1,87 @@
+uuid: c99da6d6-1825-4516-b0a8-7b099c7671e9
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.base_content_with_text_and_image.body
+    - field.field.node.base_content_with_text_and_image.field_image_main
+    - node.type.base_content_with_text_and_image
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: top-2-col
+          column_widths: 50-50
+          context_mapping: {  }
+        components:
+          62807fd2-0235-40ea-b73e-e487d263abe3:
+            uuid: 62807fd2-0235-40ea-b73e-e487d263abe3
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:base_content_with_text_and_image:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          05b37cc5-7759-442b-bf6c-6d36c861d05f:
+            uuid: 05b37cc5-7759-442b-bf6c-6d36c861d05f
+            region: first
+            configuration:
+              id: 'field_block:node:base_content_with_text_and_image:field_image_main'
+              label: 'Image Main'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: node.base_content_with_text_and_image.default
+targetEntityType: node
+bundle: base_content_with_text_and_image
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image_main:
+    type: entity_reference_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
