@@ -1,0 +1,25 @@
+uuid: cebcd8c5-de5a-4e42-a873-a9957b2dbc2b
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b44194fb-1d32-46d1-a5f3-cc39b915a6a2'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: footer_development
+theme: bootstrap
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:b44194fb-1d32-46d1-a5f3-cc39b915a6a2'
+settings:
+  id: 'block_content:b44194fb-1d32-46d1-a5f3-cc39b915a6a2'
+  label: 'Desenvolvimento Rodapé'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
