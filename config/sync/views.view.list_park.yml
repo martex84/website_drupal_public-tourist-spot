@@ -1018,7 +1018,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: list_park
+      path: park
       menu:
         type: normal
         title: Parques
