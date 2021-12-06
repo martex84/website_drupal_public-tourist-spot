@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.parques.body
-    - field.field.node.parques.field_animals_permission
     - field.field.node.parques.field_distance_area
     - field.field.node.parques.field_image_main_park
     - field.field.node.parques.field_image_secondary_park_left
@@ -37,7 +36,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_animals_permission: true
   field_distance_area: true
   field_image_main_park: true
   field_image_secondary_park_left: true

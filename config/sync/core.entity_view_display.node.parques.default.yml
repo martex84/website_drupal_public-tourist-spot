@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.parques.body
-    - field.field.node.parques.field_animals_permission
     - field.field.node.parques.field_distance_area
     - field.field.node.parques.field_image_main_park
     - field.field.node.parques.field_image_secondary_park_left
@@ -62,27 +61,6 @@ third_party_settings:
                 type: text_default
             additional: {  }
             weight: 6
-          bb6093c9-2fb8-4d10-ab83-3ec0d2ebf0d2:
-            uuid: bb6093c9-2fb8-4d10-ab83-3ec0d2ebf0d2
-            region: second
-            configuration:
-              id: 'field_block:node:parques:field_animals_permission'
-              label: 'Permission Animals '
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: above
-                type: boolean
-                settings:
-                  format: default
-                  format_custom_true: ''
-                  format_custom_false: ''
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 7
           7a8f0a23-fd10-436f-a433-0de7f183bfa1:
             uuid: 7a8f0a23-fd10-436f-a433-0de7f183bfa1
             region: second
@@ -234,16 +212,6 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_animals_permission:
-    weight: 104
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
     region: content
   field_distance_area:
     weight: 105

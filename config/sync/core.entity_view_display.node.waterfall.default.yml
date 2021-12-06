@@ -172,9 +172,10 @@ third_party_settings:
               label_display: '0'
               formatter:
                 label: hidden
-                type: entity_reference_entity_view
+                type: media_thumbnail
                 settings:
-                  view_mode: default
+                  image_style: max_325x325
+                  image_link: ''
                 third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity

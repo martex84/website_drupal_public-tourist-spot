@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.parques.body
-    - field.field.node.parques.field_animals_permission
     - field.field.node.parques.field_distance_area
     - field.field.node.parques.field_image_main_park
     - field.field.node.parques.field_image_secondary_park_left
@@ -40,13 +39,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_animals_permission:
-    weight: 4
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_distance_area:
     weight: 5
     settings:

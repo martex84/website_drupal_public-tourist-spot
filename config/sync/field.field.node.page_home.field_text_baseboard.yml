@@ -1,0 +1,21 @@
+uuid: 453d6b08-3356-4530-9139-6a5b5d711ce9
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_baseboard
+    - node.type.page_home
+  module:
+    - text
+id: node.page_home.field_text_baseboard
+field_name: field_text_baseboard
+entity_type: node
+bundle: page_home
+label: 'Texto rodape'
+description: 'Insira o texto para o rodape'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
