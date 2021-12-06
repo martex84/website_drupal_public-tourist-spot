@@ -1,75 +1,55 @@
-<img alt="Drupal Logo" src="https://www.drupal.org/files/Wordmark_blue_RGB.png" height="60px">
+# Projeto site “Public Tourist Spot” com Drupal
 
-Drupal is an open source content management platform supporting a variety of
-websites ranging from personal weblogs to large community-driven websites. For
-more information, visit the Drupal website, [Drupal.org][Drupal.org], and join
-the [Drupal community][Drupal community].
-
-## Contributing
-
-Drupal is developed on [Drupal.org][Drupal.org], the home of the international
-Drupal community since 2001!
-
-[Drupal.org][Drupal.org] hosts Drupal's [GitLab repository][GitLab repository],
-its [issue queue][issue queue], and its [documentation][documentation]. Before
-you start working on code, be sure to search the [issue queue][issue queue] and
-create an issue if your aren't able to find an existing issue.
-
-Every issue on Drupal.org automatically creates a new community-accessible fork
-that you can contribute to. Learn more about the code contribution process on
-the [Issue forks & merge requests page][issue forks].
-
-## Usage
-
-For a brief introduction, see [USAGE.txt](/core/USAGE.txt). You can also find
-guides, API references, and more by visiting Drupal's [documentation
-page][documentation].
-
-You can quickly extend Drupal's core feature set by installing any of its
-[thousands of free and open source modules][modules]. With Drupal and its
-module ecosystem, you can often build most or all of what your project needs
-before writing a single line of code.
-
-## Changelog
-
-Drupal keeps detailed [change records][changelog]. You can search Drupal's
-changes for a record of every notable breaking change and new feature since
-2011.
-
-## Security
-
-For a list of security announcements, see the [Security advisories
-page][Security advisories] (available as [an RSS feed][security RSS]). This
-page also describes how to subscribe to these announcements via email.
-
-For information about the Drupal security process, or to find out how to report
-a potential security issue to the Drupal security team, see the [Security team
-page][security team].
-
-## Need a helping hand?
-
-Visit the [Support page][support] or browse [over a thousand Drupal
-providers][service providers] offering design, strategy, development, and
-hosting services.
-
-## Legal matters
-
-Know your rights when using Drupal by reading Drupal core's
-[license](/core/LICENSE.txt).
-
-Learn about the [Drupal trademark and logo policy here][trademark].
-
-[Drupal.org]: https://www.drupal.org
-[Drupal community]: https://www.drupal.org/community
-[GitLab repository]: https://git.drupalcode.org/project/drupal
-[issue queue]: https://www.drupal.org/project/issues/drupal
-[issue forks]: https://www.drupal.org/drupalorg/docs/gitlab-integration/issue-forks-merge-requests
-[documentation]: https://www.drupal.org/documentation
-[changelog]: https://www.drupal.org/list-changes/drupal
-[modules]: https://www.drupal.org/project/project_module
-[security advisories]: https://www.drupal.org/security
-[security RSS]: https://www.drupal.org/security/rss.xml
-[security team]: https://www.drupal.org/drupal-security-team
-[service providers]: https://www.drupal.org/drupal-services
-[support]: https://www.drupal.org/support
-[trademark]: https://www.drupal.com/trademark
+O projeto tem como finalidade a criação de um site de turismo, com conteúdo primário, cachoeiras e parques de diversões, utilizando como ferramenta o Drupal;
+</br></br></br>
+## Dependências e Módulos do Drupal
+- Admin Toolbar;
+- Pathauto;
+- CTools;
+- Token;
+- Devel;
+- Drush;
+- Bootstrap;
+</br></br></br>
+## Pastas e Arquivos Especiais
+- Config: Responsável por armazenar as configurações do drupal;
+- Database: Responsável por armazenar o banco de dados com os dados do drupal
+- Scriptconfig: Responsável por automatizar os códigos de armazenamento do config e da database, pelo Lando/Drush;
+</br></br></br>
+## Instalação
+1. Instale o Lando na máquina;
+2. Realize a clonagem da última versão deste github e entre na pasta;
+3. Utilize o comando a seguir para criar o docker local:
+> lando start
+4. Utilize o código a seguir com o composer para instalar as dependências e o core do Drupal:
+> lando composer install
+5. Utilize o código a seguir para instalar a configuração no database, importando o arquivo dentro da pasta "database":
+> lando db-import ./database/database.sql.gz
+6. Utilize o código a seguir para pegar o link referente ao site, entre no mesmo e prossiga com a instalação:
+> lando info
+7. Utilize a seguinte configuração na parte referente ao database:
+> Nome BD: drupal9 </br>
+> Usuário BD: drupal9 </br>
+> Senha BD: drupal9 </br>
+> Servidor BD: database </br>
+8. Clique no link "site atual";
+</br></br></br>
+## Bugs e suas soluções
+- Bug referente ao admintoolbar onde tudo fica em listas:
+> Caso ocorra algum erro de tema quando conectar com administrador, deve seguir para link a seguir e habilitar o tema default para “área de administração”: </br>
+> **/admin/appearance**
+</br></br></br>
+## Contato Desenvolvedor
+- Nome: Marcelo TJ
+- Apelido: martex84
+- Linkdl: [link](https://www.linkedin.com/in/martex8/)
+</br></br></br>
+## Imagens
+- Imagem da Home Page(Local:/Image/image_total_home-page.png)
+![Imagem Home Page](./Image/image_total_home-page.png)
+</br></br>
+- Imagem da Pagina de Parques de Diversões(Local:/Image/image_park-page.png)
+![Imagem Home Page](./Image/image_park-page.png)
+</br></br>
+- Imagem da Pagina de Cachoeiras(Local:/Image/image_waterfall-page.png)
+![Imagem Home Page](./Image/image_waterfall-page.png)
