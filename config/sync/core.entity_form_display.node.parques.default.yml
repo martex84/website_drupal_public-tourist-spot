@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.parques.field_name_city
     - field.field.node.parques.field_name_nation
     - field.field.node.parques.field_permission_feed
+    - field.field.node.parques.field_type_content
     - node.type.parques
   module:
     - link
@@ -49,7 +50,7 @@ content:
     region: content
   field_image_main_park:
     type: media_library_widget
-    weight: 1
+    weight: 2
     settings:
       media_types: {  }
     third_party_settings: {  }
@@ -77,7 +78,7 @@ content:
     type: link_default
     region: content
   field_name_city:
-    weight: 2
+    weight: 3
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -87,7 +88,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_name_nation:
-    weight: 3
+    weight: 4
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -102,6 +103,16 @@ content:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
+  field_type_content:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   path:
     type: path
@@ -132,7 +143,7 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60

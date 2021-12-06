@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.waterfall.field_name_nation
     - field.field.node.waterfall.field_private_propriety
     - field.field.node.waterfall.field_river_name
+    - field.field.node.waterfall.field_type_content_waterfall
     - field.field.node.waterfall.field_waterfall_video
     - node.type.waterfall
   module:
@@ -43,5 +44,6 @@ hidden:
   field_name_nation: true
   field_private_propriety: true
   field_river_name: true
+  field_type_content_waterfall: true
   field_waterfall_video: true
   langcode: true

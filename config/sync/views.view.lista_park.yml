@@ -177,7 +177,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Lista dos Parques'
+      title: 'Lista dos parques de diversões'
       header: {  }
       footer: {  }
       empty: {  }

@@ -53,7 +53,7 @@ web.config
 ###
 
 # Ignore Drupal's file directory
-/sites/default/files
+/sites/default/files/*
 
 # Ignore setting Drupal
 /sites/default/settings.php
@@ -109,3 +109,7 @@ Thumbs.db
 
 # Things in the core directory that Drupal 8 commits in the repository.
 !core/**/*.gz
+
+# Will permit that this pastes be passed to github
+!/sites/default/files/2021-12
+!/sites/default/files/inline-images

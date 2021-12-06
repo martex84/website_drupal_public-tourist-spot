@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.parques.field_name_city
     - field.field.node.parques.field_name_nation
     - field.field.node.parques.field_permission_feed
+    - field.field.node.parques.field_type_content
     - node.type.parques
   module:
     - text
@@ -44,4 +45,5 @@ hidden:
   field_name_city: true
   field_name_nation: true
   field_permission_feed: true
+  field_type_content: true
   langcode: true

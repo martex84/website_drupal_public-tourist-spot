@@ -1,0 +1,33 @@
+uuid: d85e9fc9-ac91-4410-ad41-6e67e718ba81
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_content
+    - node.type.parques
+    - taxonomy.vocabulary.type_contents
+  content:
+    - 'taxonomy_term:type_contents:bd4a2f24-e60f-4066-a7fc-b8b6c40cc0c5'
+id: node.parques.field_type_content
+field_name: field_type_content
+entity_type: node
+bundle: parques
+label: 'Tipo de conteudo'
+description: 'Selecionar tipo de conteudo.'
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: bd4a2f24-e60f-4066-a7fc-b8b6c40cc0c5
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_contents: type_contents
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

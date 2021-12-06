@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.parques.field_name_city
     - field.field.node.parques.field_name_nation
     - field.field.node.parques.field_permission_feed
+    - field.field.node.parques.field_type_content
     - node.type.parques
   module:
     - layout_builder
@@ -283,6 +284,14 @@ content:
     third_party_settings: {  }
     type: boolean
     region: content
+  field_type_content:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: first
   links:
     weight: 100
     settings: {  }
