@@ -24,7 +24,7 @@ dependencies:
 id: lista_park
 label: 'Lista Parque'
 module: views
-description: ''
+description: 'Cria listas para page, block e Rest do conteúdo Park'
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -525,7 +525,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: 'Saiba mais...'
+          text: 'Veja mais...'
           output_url_as_text: false
           absolute: false
           entity_type: node
@@ -932,7 +932,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: 'Saiba mais...'
+          text: 'Veja mais...'
           output_url_as_text: false
           absolute: false
           entity_type: node
