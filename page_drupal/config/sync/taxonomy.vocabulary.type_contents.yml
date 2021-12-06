@@ -2,7 +2,7 @@ uuid: bd2006c1-84b0-4a92-bbf9-ec0c78df2033
 langcode: pt-br
 status: true
 dependencies: {  }
-name: 'Tipo de conteudos'
+name: 'Type Contents'
 vid: type_contents
-description: ''
+description: 'Categoriza os tipos de conteúdos utilizados nas páginas principais'
 weight: 0

@@ -10,6 +10,7 @@ O projeto tem como finalidade a criação de um site de turismo, com conteúdo p
 - Devel;
 - Drush;
 - Bootstrap;
+- Claro;
 </br></br></br>
 ## Pastas e Arquivos Especiais
 - Config: Responsável por armazenar as configurações do drupal;
@@ -34,10 +35,15 @@ O projeto tem como finalidade a criação de um site de turismo, com conteúdo p
 > Servidor BD: database </br>
 8. Clique no link "site atual";
 </br></br></br>
+
+## Acesso de Rest
+O Rest das páginas Parque e Cachoeira, podem ser acessadas pelo link a seguir:
+- Cachoeira: /waterfall/list_waterfall_rest
+- Parque: /park/list_park_rest
 ## Bugs e suas soluções
 - Bug referente ao admintoolbar onde tudo fica em listas:
 > Caso ocorra algum erro de tema quando conectar com administrador, deve clicar no link "Rebuild theme registry" no grupo "Flush all caches" do "Tools", dessa forma irá recarregar o thema administrativo: </br>
-> **Tools > Flaush all caches > Rebuild theme registry**
+> **Tools > Flush all caches > Rebuild theme registry**
 ![Imagem Bug Admintoobar](./Image/image_bug-page.png)
 
 </br></br>
