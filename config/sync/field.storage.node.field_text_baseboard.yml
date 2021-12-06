@@ -1,0 +1,19 @@
+uuid: fb92d5f1-6329-437c-8893-97b99755a6a1
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_text_baseboard
+field_name: field_text_baseboard
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

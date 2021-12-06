@@ -1,0 +1,29 @@
+uuid: 99acc448-730e-47c6-ba3f-379a1c74a977
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.lista_park
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__lista_park_block_1
+theme: bootstrap
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'views_block:lista_park-block_1'
+settings:
+  id: 'views_block:lista_park-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node
+    negate: false
