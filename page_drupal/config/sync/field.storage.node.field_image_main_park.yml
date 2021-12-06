@@ -1,0 +1,20 @@
+uuid: 439840a7-ab29-47da-a48f-75969af94106
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_image_main_park
+field_name: field_image_main_park
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

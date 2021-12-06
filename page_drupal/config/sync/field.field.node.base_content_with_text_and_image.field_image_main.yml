@@ -1,0 +1,29 @@
+uuid: bbc0dbf6-dc8c-4b8e-ab92-ecb0590a4a30
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_main
+    - media.type.image
+    - node.type.base_content_with_text_and_image
+id: node.base_content_with_text_and_image.field_image_main
+field_name: field_image_main
+entity_type: node
+bundle: base_content_with_text_and_image
+label: 'Imagem Principal'
+description: 'Inclua uma imagem para representar a empresa.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

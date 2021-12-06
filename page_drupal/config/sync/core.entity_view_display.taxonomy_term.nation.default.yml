@@ -1,0 +1,80 @@
+uuid: 29d09840-30ae-47c8-9213-0597128de475
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.nation.field_image_nation
+    - taxonomy.vocabulary.nation
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: top-2-col
+          column_widths: 50-50
+          context_mapping: {  }
+        components:
+          bdd689e4-e566-4938-9800-de6c2574cf11:
+            uuid: bdd689e4-e566-4938-9800-de6c2574cf11
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:nation:description'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          f623c640-f712-4667-a03c-a63fc53f50c7:
+            uuid: f623c640-f712-4667-a03c-a63fc53f50c7
+            region: first
+            configuration:
+              id: 'field_block:taxonomy_term:nation:field_image_nation'
+              label: 'Image nation'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: taxonomy_term.nation.default
+targetEntityType: taxonomy_term
+bundle: nation
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image_nation:
+    type: entity_reference_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

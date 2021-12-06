@@ -1,0 +1,29 @@
+uuid: 05eedcfb-696f-4574-a70f-a2276e4db6f6
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_main_park
+    - media.type.image
+    - node.type.parques
+id: node.parques.field_image_main_park
+field_name: field_image_main_park
+entity_type: node
+bundle: parques
+label: 'Image Main Park'
+description: 'Escolha a imagem principal para o parque.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

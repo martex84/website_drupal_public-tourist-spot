@@ -1,0 +1,23 @@
+uuid: d881f82e-1f5f-41b4-bd07-7393cd3ae34a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.base_content_with_text_and_image
+  module:
+    - text
+id: node.base_content_with_text_and_image.body
+field_name: body
+entity_type: node
+bundle: base_content_with_text_and_image
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

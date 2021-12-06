@@ -1,0 +1,146 @@
+uuid: 10d1c722-4cec-4524-a04d-e50deb5863ca
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.page_home.body
+    - field.field.node.page_home.field_image_main_home
+    - field.field.node.page_home.field_text_baseboard
+    - node.type.page_home
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: Top-2-col
+          column_widths: 50-50
+          context_mapping: {  }
+        components:
+          fd6b3c21-876a-49e6-8592-a8c289058ada:
+            uuid: fd6b3c21-876a-49e6-8592-a8c289058ada
+            region: first
+            configuration:
+              id: 'field_block:node:page_home:field_image_main_home'
+              label: 'Imagem Principal Home'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: media_thumbnail
+                settings:
+                  image_style: max_325x325
+                  image_link: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          0023fbe5-3ca9-44bc-b22a-00cb471984c5:
+            uuid: 0023fbe5-3ca9-44bc-b22a-00cb471984c5
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page_home:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: bottom-1-col
+          context_mapping: {  }
+        components:
+          a532e326-e4c7-4d55-a22d-c60f6ded5887:
+            uuid: a532e326-e4c7-4d55-a22d-c60f6ded5887
+            region: content
+            configuration:
+              id: 'field_block:node:page_home:field_text_baseboard'
+              label: 'Texto rodape'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: node.page_home.default
+targetEntityType: node
+bundle: page_home
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image_main_home:
+    type: entity_reference_entity_view
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_link_park:
+    weight: 107
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: first
+  field_link_waterfall:
+    weight: 106
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: first
+  field_text_baseboard:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: first
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

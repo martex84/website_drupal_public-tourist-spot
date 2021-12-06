@@ -1,0 +1,49 @@
+uuid: 018aeaad-ef3e-47a8-8b1d-d97f3eb8dadd
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.parques.body
+    - field.field.node.parques.field_distance_area
+    - field.field.node.parques.field_image_main_park
+    - field.field.node.parques.field_image_secondary_park_left
+    - field.field.node.parques.field_image_secondary_park_right
+    - field.field.node.parques.field_local_google_map
+    - field.field.node.parques.field_name_city
+    - field.field.node.parques.field_name_nation
+    - field.field.node.parques.field_permission_feed
+    - field.field.node.parques.field_type_content
+    - node.type.parques
+  module:
+    - text
+    - user
+id: node.parques.teaser
+targetEntityType: node
+bundle: parques
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_distance_area: true
+  field_image_main_park: true
+  field_image_secondary_park_left: true
+  field_image_secondary_park_right: true
+  field_local_google_map: true
+  field_name_city: true
+  field_name_nation: true
+  field_permission_feed: true
+  field_type_content: true
+  langcode: true

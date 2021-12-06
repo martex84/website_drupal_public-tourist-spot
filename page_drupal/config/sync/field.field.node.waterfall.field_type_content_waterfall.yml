@@ -1,0 +1,33 @@
+uuid: 25d866ab-9f0b-47af-94c7-0258902190f9
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_content_waterfall
+    - node.type.waterfall
+    - taxonomy.vocabulary.type_contents
+  content:
+    - 'taxonomy_term:type_contents:c051a03c-9989-41fc-9d00-994afd11d958'
+id: node.waterfall.field_type_content_waterfall
+field_name: field_type_content_waterfall
+entity_type: node
+bundle: waterfall
+label: 'Tipo de conteudo'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: c051a03c-9989-41fc-9d00-994afd11d958
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_contents: type_contents
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,308 @@
+uuid: c5164517-6145-49dd-ba80-d66529f30dea
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.waterfall.body
+    - field.field.node.waterfall.field_detailed_image_waterfall
+    - field.field.node.waterfall.field_image_main_waterfall
+    - field.field.node.waterfall.field_local_feeding
+    - field.field.node.waterfall.field_name_city
+    - field.field.node.waterfall.field_name_nation
+    - field.field.node.waterfall.field_private_propriety
+    - field.field.node.waterfall.field_river_name
+    - field.field.node.waterfall.field_type_content_waterfall
+    - field.field.node.waterfall.field_waterfall_video
+    - node.type.waterfall
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: top-2-col
+          column_widths: 50-50
+          context_mapping: {  }
+        components:
+          c6ed5b6d-da19-4fa9-8000-eca573ec4741:
+            uuid: c6ed5b6d-da19-4fa9-8000-eca573ec4741
+            region: first
+            configuration:
+              id: 'field_block:node:waterfall:field_image_main_waterfall'
+              label: 'Imagem Principal da Cachoeira'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          83860a44-cafd-46a4-8a45-5df20e4f953f:
+            uuid: 83860a44-cafd-46a4-8a45-5df20e4f953f
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:waterfall:field_name_nation'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 3
+          0f140a1d-6cd4-49f9-96fd-fd32cb8a36bf:
+            uuid: 0f140a1d-6cd4-49f9-96fd-fd32cb8a36bf
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:waterfall:field_river_name'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 4
+          065aaebc-b04a-4b3f-bfdb-62994a0ed86f:
+            uuid: 065aaebc-b04a-4b3f-bfdb-62994a0ed86f
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:waterfall:field_name_city'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 2
+          7c2da05c-ef78-44f4-b3d5-a4bc2fb014e0:
+            uuid: 7c2da05c-ef78-44f4-b3d5-a4bc2fb014e0
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:waterfall:field_local_feeding'
+              formatter:
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+                type: boolean
+            additional: {  }
+            weight: 5
+          1535b29a-8606-414f-b7b3-402e11c87e5e:
+            uuid: 1535b29a-8606-414f-b7b3-402e11c87e5e
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:waterfall:field_private_propriety'
+              formatter:
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+                type: boolean
+            additional: {  }
+            weight: 6
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: middle-1-col
+          context_mapping: {  }
+        components:
+          a3718ff8-b332-4967-b881-c90afcc5033c:
+            uuid: a3718ff8-b332-4967-b881-c90afcc5033c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:waterfall:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: bottom-2-col
+          column_widths: 50-50
+          context_mapping: {  }
+        components:
+          79631fe4-1281-4e37-abc6-952a59ce7c70:
+            uuid: 79631fe4-1281-4e37-abc6-952a59ce7c70
+            region: first
+            configuration:
+              id: 'field_block:node:waterfall:field_detailed_image_waterfall'
+              label: 'Imagem para detalhe da cachoeira'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: media_thumbnail
+                settings:
+                  image_style: max_325x325
+                  image_link: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          53091bf9-e008-4d19-af62-99236164dac7:
+            uuid: 53091bf9-e008-4d19-af62-99236164dac7
+            region: second
+            configuration:
+              id: 'field_block:node:waterfall:field_waterfall_video'
+              label: 'Video da Cachoeira'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components: {  }
+        third_party_settings: {  }
+id: node.waterfall.default
+targetEntityType: node
+bundle: waterfall
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_detailed_image_waterfall:
+    type: entity_reference_entity_view
+    weight: 109
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_image_main_waterfall:
+    type: entity_reference_entity_view
+    weight: 105
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_local_feeding:
+    weight: 107
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_name_city:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_name_nation:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_private_propriety:
+    weight: 108
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_river_name:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_type_content_waterfall:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: first
+  field_waterfall_video:
+    type: entity_reference_entity_view
+    weight: 110
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

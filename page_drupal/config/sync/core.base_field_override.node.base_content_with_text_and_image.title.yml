@@ -1,0 +1,18 @@
+uuid: ed0e6e3f-2386-4ff3-89f2-6d20ebc166ab
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.base_content_with_text_and_image
+id: node.base_content_with_text_and_image.title
+field_name: title
+entity_type: node
+bundle: base_content_with_text_and_image
+label: 'Conteúdo básico com texto e imagem'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,8 @@
+uuid: 7f2318ef-1172-46ac-864d-7642f039311a
+langcode: pt-br
+status: true
+dependencies: {  }
+name: Nation
+vid: nation
+description: Países
+weight: 0

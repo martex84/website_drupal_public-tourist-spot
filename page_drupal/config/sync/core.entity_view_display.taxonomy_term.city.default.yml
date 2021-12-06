@@ -1,0 +1,49 @@
+uuid: 95fae8a8-0279-4630-aaab-5f7adc1dbdec
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.city
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          9a973b7d-3280-4ae7-b4e2-bb85b600ace3:
+            uuid: 9a973b7d-3280-4ae7-b4e2-bb85b600ace3
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:city:description'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: taxonomy_term.city.default
+targetEntityType: taxonomy_term
+bundle: city
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
