@@ -18,7 +18,7 @@ O projeto tem como finalidade a criação de um site de turismo, com conteúdo p
 </br></br></br>
 ## Instalação
 1. Instale o Lando na máquina;
-2. Realize a clonagem da última versão deste github e entre na pasta;
+2. Realize a clonagem da última versão deste github e entre na pasta criado pela clonagem e depois na pasta do drupal chamada **"page_drupal"**;
 3. Utilize o comando a seguir para criar o docker local:
 > lando start
 4. Utilize o código a seguir com o composer para instalar as dependências e o core do Drupal:
@@ -36,9 +36,11 @@ O projeto tem como finalidade a criação de um site de turismo, com conteúdo p
 </br></br></br>
 ## Bugs e suas soluções
 - Bug referente ao admintoolbar onde tudo fica em listas:
-> Caso ocorra algum erro de tema quando conectar com administrador, deve seguir para link a seguir e habilitar o tema default para “área de administração”: </br>
-> **/admin/appearance**
-</br></br></br>
+> Caso ocorra algum erro de tema quando conectar com administrador, deve clicar no link "Rebuild theme registry" no grupo "Flush all caches" do "Tools", dessa forma irá recarregar o thema administrativo: </br>
+> **Tools > Flaush all caches > Rebuild theme registry**
+![Imagem Bug Admintoobar](./Image/image_bug-page.png)
+
+</br></br>
 ## Contato Desenvolvedor
 - Nome: Marcelo TJ
 - Apelido: martex84
