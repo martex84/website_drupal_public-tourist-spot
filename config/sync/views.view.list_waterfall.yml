@@ -309,7 +309,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      title: 'Lista das Cachoeiras'
+      title: 'Lista das cachoeiras'
       defaults:
         title: false
         style: false
