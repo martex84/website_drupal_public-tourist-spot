@@ -46,6 +46,8 @@ O Rest das páginas Parque e Cachoeira, podem ser acessadas pelo link a seguir:
 > **Tools > Flush all caches > Rebuild theme registry**
 ![Imagem Bug Admintoobar](./Image/image_bug-page.png)
 
+> Caso o erro anterior ainda persista vá para a página **"/admin"** ou como pode ser mostrado na lista do bug, **"Desenvolvimento"**, seguindo para a parte com as seguintes opções iguais **"registro do tema"**, **"Aparência"** ou ainda **"/admin/appearance"**;
+
 </br></br>
 ## Contato Desenvolvedor
 - Nome: Marcelo TJ
